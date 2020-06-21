@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Login Form</title>
+</head>
+<style>
+
+    *{Margins: 0; padding:0}
+    body{background:lightblue; font-family: sans-serif;}
+
+    .form-wrap{ width: 320px; background: white; padding: 40px 20px; box-sizing: border-box; position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);}
+    h1{text-align: center; color:midnightblue; font-weight: normal; margin-bottom: 20px;}
+
+    
+    input{width: 100%; background: none; border: 1px solid black; border-radius: 3px; padding: 6px 15px; box-sizing: border-box; margin-bottom: 20px; font-size: 16px; color: #fff;}
+   
+    input[type="button"]{ background: #bac675; border: 0; cursor: pointer; color: #3e3d3d;}
+    input[type="button"]:hover{ background: #a4b15c; transition: .6s;}
+        
+        ::placeholder{color:black;}
+
+    </style>
+<body>
+    <div class="wrap">
+        <form class="login-form" action="">
+            <div class="form-header">
+                <h3>Login Form</h3>
+                <p>Login to access your dashboard</p>
+            </div>
+            <!--Email Input-->
+            <div class="form-group">
+                <input type="text" class="form-input" placeholder="email@example.com">
+            </div>
+            <!--Password Input-->
+            <div class="form-group">
+                <input type="password" class="form-input" placeholder="password">
+            </div>
+            <!--Login Button-->
+            <div class="form-group">
+                <button class="form-button" type="submit">Login</button>
+            </div>
+            <div class="form-footer">
+            Don't have an account? <a href="#">Sign Up</a>
+            </div>
+        </form>
+    </div><!--/.wrap-->
+</body>
+</html>
